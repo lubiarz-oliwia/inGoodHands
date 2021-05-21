@@ -1,0 +1,83 @@
+//ThreeColumns style
+.threeColumns {
+    background-image: url('../../assets/ColumnsBackground.png');
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 100px;
+    color: $color-text2;
+
+    div {
+        text-align: center;
+
+        h1 {
+            font-size: 90px;
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 18px;
+            padding-bottom: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            color: $color-text;
+            padding: 0 80px;
+        }
+    }
+}
+
+//FourSteps style
+.fourSteps {
+    text-align: center;
+    color: $color-text;
+    padding: 50px 0;
+
+    h1 {
+        size: 38px;
+        color: $color-text;
+    }
+
+    img {
+        padding-top: 20px;
+    }
+
+    .columns {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 70px 400px;
+        background-color: $color-1;
+        margin: 36px 0;
+
+        div {
+            h1 {
+                font-size: 18px;
+            }
+
+            p {
+                font-size: 16px;
+                padding: 0 50px;
+            }
+        }
+    }
+
+    button {
+        background-color: white;
+        padding: 19px 33px;
+        width: 300px;
+        font-size: 36px;
+        border: $color-text solid 0.75px;
+
+        a {
+            text-decoration: none;
+            color: $color-text;
+        }
+    }
+}
+
+.useStory {
+    text-align: center;
+    color: $color-text;
+    padding: 50px 0;
+}
