@@ -7,12 +7,12 @@ import UserStory from './Home/UserStory';
 
 export default function Home() {
     return (
-        <div>
+        <>
             <HomeHeader/>
             <ThreeColumns />
             <FourSteps />
             <UserStory />
             <ContactUs/>
-        </div>
+        </>
     )
 }
