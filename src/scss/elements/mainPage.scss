@@ -76,8 +76,106 @@
     }
 }
 
+
+// useStory
 .useStory {
-    text-align: center;
     color: $color-text;
-    padding: 50px 0;
+    padding: 50px 0px;
+    background-color: $color-white;
+    text-align: center;
+}
+
+// buttons for useStory
+.unclicked {
+    background-color: $color-white;
+    outline: none;
+    border: 0px;
+    font-size: 24px;
+    margin: 20px;
+}
+
+.clicked {
+    background-color: $color-white;
+    font-size: 24px;
+    padding: 20px;
+}
+
+
+// useStoryTables
+.userStoryTables {
+
+    .mainText {
+        align-items: center;
+        padding: 50px 400px;
+        text-align: center;
+    }
+
+    .rows {
+        margin: 20px 300px;
+        position: relative;
+
+
+        .row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-bottom: 30px;
+            padding-top: 30px;
+            position: relative;
+            border-bottom: 1px solid $color-grey;
+
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+    }
+}
+
+
+//Header_component
+
+.for_header {
+
+    .header_h1 {
+        size: 38px;
+        color: $color-text;
+    }
+
+    .img_decoration {
+        padding-top: 20px;
+        padding-bottom: 10px;
+        width: 250px;
+    }
+}
+
+//ABout_us
+
+.aboutUs {
+    display: flex;
+    background-color: $color-1;
+    justify-content: center;
+    align-items: center;
+
+    div {
+        text-align: center;
+        position: relative;
+
+        p {
+            font-size: 30px;
+            padding: 20px 150px;
+        }
+
+        .signature_img {
+            justify-content: flex-start;
+            width: 150px;
+            height: auto;
+            position: relative;
+            left: 150px;
+        }
+    }
+
+    img {
+        width: 50%;
+        height: auto;
+    }
 }

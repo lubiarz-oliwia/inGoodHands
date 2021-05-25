@@ -50,7 +50,7 @@ function HomeHeader() {
                     <li>
                         <ScrollLink
                             activeClass="active"
-                            to="section2"
+                            to="aboutUs"
                             spy={true}
                             smooth={true}
                             offset={-70}

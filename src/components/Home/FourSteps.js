@@ -10,12 +10,12 @@ import Icon1 from '../../assets/Icon1.svg';
 import Icon2 from '../../assets/Icon2.svg';
 import Icon3 from '../../assets/Icon3.svg';
 import Icon4 from '../../assets/Icon4.svg';
+import Header from './Header';
 
 function FourSteps() {
     return (
         <div id="fourSteps" className="fourSteps">
-            <h1>Wystarczą 4 proste kroki</h1>
-            <img src={Decoration} alt="dekoracja" />
+            <Header h1_text={"Wystarczą 4 proste kroki"} />
             <div className="columns">
                 <div>
                     <img src={Icon1} alt="koszulka" />
