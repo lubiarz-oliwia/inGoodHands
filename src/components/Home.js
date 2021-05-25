@@ -1,4 +1,5 @@
 import React from 'react';
+import AboutUs from './Home/AboutUs';
 import ContactUs from './Home/ContactUs';
 import FourSteps from './Home/FourSteps';
 import HomeHeader from './Home/HomeHeader';
@@ -11,6 +12,7 @@ export default function Home() {
             <HomeHeader/>
             <ThreeColumns />
             <FourSteps />
+            <AboutUs />
             <UserStory />
             <ContactUs/>
         </>
