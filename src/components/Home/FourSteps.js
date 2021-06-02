@@ -1,11 +1,5 @@
 import React from 'react';
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link
-} from "react-router-dom";
-import Decoration from "../../assets/Decoration.svg";
+import { Link } from "react-router-dom";
 import Icon1 from '../../assets/Icon1.svg';
 import Icon2 from '../../assets/Icon2.svg';
 import Icon3 from '../../assets/Icon3.svg';

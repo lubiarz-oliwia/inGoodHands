@@ -3,7 +3,6 @@ import Header from './Header';
 import Signature from '../../assets/Signature.svg';
 import People from '../../assets/People.jpg';
 
-
 function AboutUs() {
     return (
         <div className="aboutUs" id="aboutUs">
@@ -17,4 +16,4 @@ function AboutUs() {
     )
 }
 
-export default AboutUs
+export default AboutUs;

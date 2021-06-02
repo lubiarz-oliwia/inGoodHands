@@ -1,0 +1,45 @@
+header {
+    height: 100vh;
+    background-image: url('../../../assets/HomeHero.jpg');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    margin-left: -360px;
+
+    div {
+        align-items: flex-end;
+        flex-direction: column;
+
+        .mainHeader {
+            display: flex;
+            align-items: flex-end;
+            padding-right: 100px;
+            padding-top: 100px;
+
+            .for_btns {
+                padding-top: 20px;
+                display: inline-block;
+
+                button {
+                    background-color: white;
+                    padding: 19px 33px;
+                    font-size: 36px;
+                    width: 300px;
+
+                    a {
+                        text-decoration: none;
+                        color: $color-text;
+                    }
+
+                    &:first-child {
+                        margin-right: 10px;
+                    }
+
+                    &:last-child {
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

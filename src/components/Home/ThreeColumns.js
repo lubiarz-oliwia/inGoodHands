@@ -22,4 +22,4 @@ function ThreeColumns() {
     )
 }
 
-export default ThreeColumns
+export default ThreeColumns;
