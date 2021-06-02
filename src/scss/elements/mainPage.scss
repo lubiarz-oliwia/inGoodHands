@@ -1,144 +1,14 @@
-//ThreeColumns style
-.threeColumns {
-    background-image: url('../../assets/ColumnsBackground.png');
-    display: flex;
-    justify-content: space-between;
-    padding: 50px 100px;
-    color: $color-text2;
-
-    div {
-        text-align: center;
-
-        h1 {
-            font-size: 90px;
-            padding-bottom: 10px;
-        }
-
-        h2 {
-            font-size: 18px;
-            padding-bottom: 20px;
-        }
-
-        p {
-            font-size: 16px;
-            color: $color-text;
-            padding: 0 80px;
-        }
-    }
-}
-
-//FourSteps style
-.fourSteps {
-    text-align: center;
-    color: $color-text;
-    padding: 50px 0;
-
-    h1 {
-        size: 38px;
-        color: $color-text;
-    }
-
-    img {
-        padding-top: 20px;
-    }
-
-    .columns {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 70px 400px;
-        background-color: $color-1;
-        margin: 36px 0;
-
-        div {
-            h1 {
-                font-size: 18px;
-            }
-
-            p {
-                font-size: 16px;
-                padding: 0 50px;
-            }
-        }
-    }
-
-    button {
-        background-color: white;
-        padding: 19px 33px;
-        width: 300px;
-        font-size: 36px;
-        border: $color-text solid 0.75px;
-
-        a {
-            text-decoration: none;
-            color: $color-text;
-        }
-    }
-}
-
-
-// useStory
-.useStory {
-    color: $color-text;
-    padding: 50px 0px;
-    background-color: $color-white;
-    text-align: center;
-}
-
-// buttons for useStory
-.unclicked {
-    background-color: $color-white;
-    outline: none;
-    border: 0px;
-    font-size: 24px;
-    margin: 20px;
-}
-
-.clicked {
-    background-color: $color-white;
-    font-size: 24px;
-    padding: 20px;
-}
-
-
-// useStoryTables
-.userStoryTables {
-
-    .mainText {
-        align-items: center;
-        padding: 50px 400px;
-        text-align: center;
-    }
-
-    .rows {
-        margin: 20px 300px;
-        position: relative;
-
-
-        .row {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding-bottom: 30px;
-            padding-top: 30px;
-            position: relative;
-            border-bottom: 1px solid $color-grey;
-
-            &:last-child {
-                border-bottom: none;
-            }
-        }
-    }
-}
-
-
-//Header_component
-
 .for_header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 
     .header_h1 {
         size: 38px;
         color: $color-text;
+        width: 674px;
+        text-align: center;
     }
 
     .img_decoration {
@@ -148,34 +18,13 @@
     }
 }
 
-//ABout_us
 
-.aboutUs {
-    display: flex;
-    background-color: $color-1;
-    justify-content: center;
-    align-items: center;
+// importy dla maina
+@import './home/nav';
+@import './home/header.scss';
+@import './home/threeColumns.scss';
+@import './home/fourSteps.scss';
+@import './home/aboutUs.scss';
+@import './home/userStory.scss';
+@import './home/contactUs.scss';
 
-    div {
-        text-align: center;
-        position: relative;
-
-        p {
-            font-size: 30px;
-            padding: 20px 150px;
-        }
-
-        .signature_img {
-            justify-content: flex-start;
-            width: 150px;
-            height: auto;
-            position: relative;
-            left: 150px;
-        }
-    }
-
-    img {
-        width: 50%;
-        height: auto;
-    }
-}

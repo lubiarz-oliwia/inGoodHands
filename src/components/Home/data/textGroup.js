@@ -1,4 +1,3 @@
-
 export const foundation_page1 = {
     mainText: "Lorem1 ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
     line1_h1: "Fundacja1 Lorem ipsum1",
@@ -76,3 +75,10 @@ export const locals_page1 = {
     line3_p: "Quis varius quam quisque id diam vel quam elementum pulvinar.",
     line3_p2: "Egestas, sed, tempus",
 };
+
+// const data = {
+//     foundation: {
+//         description: "sss",
+//         elements: ["tablica obiektow, w kazdym obiekcie 3 elementy"]
+//     }
+// }

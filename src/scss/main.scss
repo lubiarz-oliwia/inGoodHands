@@ -3,8 +3,8 @@
 
 @import './settings/colors';
 @import './settings/fonts';
-@import './elements/header';
 @import './elements/mainPage';
+@import './elements/login.scss';
 
 * {
     box-sizing: border-box;

@@ -11,7 +11,11 @@ function UserStory() {
             <div>
                 <UserStoryTable textGroup={text} />
                 {pages && pages.map((el, index) => (
-                    <button className={showText == (el) ? "clicked" : "unclicked"} onClick={() => setShowText(el)}> {index + 1} </button>
+                    <button
+                        className={showText === (el) ? "clicked" : "unclicked"}
+                        onClick={() => setShowText(el)}>
+                        {index + 1}
+                    </button>
                 ))}
                 {/* { pages ? "do something if pages are true" : "do if pages are false"}
                 { pages ? "do something if pages are true" : null} 
@@ -33,9 +37,24 @@ function UserStory() {
         <div id="userStory" className="useStory">
             <Header h1_text={"Komu pomagamy?"} />
             <div>
-                <button className={[1, 2].includes(showText) ? "clicked" : "unclicked"} onClick={() => setShowText(1)}>Fundacjom</button>
-                <button className={[3, 4, 5].includes(showText) ? "clicked" : "unclicked"} onClick={() => setShowText(3)}>Organizacjom pozarządowym</button>
-                <button className={showText == 6 ? "clicked" : "unclicked"} onClick={() => setShowText(6)}>Lokalnym zbiórkom</button>
+                <button
+                    className={[1, 2].includes(showText) ? "clicked" : "unclicked"}
+                    onClick={() => setShowText(1)}
+                >
+                    Fundacjom
+                </button>
+                <button
+                    className={[3, 4, 5].includes(showText) ? "clicked" : "unclicked"}
+                    onClick={() => setShowText(3)}
+                >
+                    Organizacjom pozarządowym
+                </button>
+                <button
+                    className={showText === 6 ? "clicked" : "unclicked"}
+                    onClick={() => setShowText(6)}
+                >
+                    Lokalnym zbiórkom
+                </button>
             </div>
             {showText ? (textMapper[showText]) : null}
         </div>

@@ -6,7 +6,7 @@ import HomeHeader from './Home/HomeHeader';
 import ThreeColumns from './Home/ThreeColumns';
 import UserStory from './Home/UserStory';
 
-export default function Home() {
+function Home() {
     return (
         <>
             <HomeHeader/>
@@ -18,3 +18,5 @@ export default function Home() {
         </>
     )
 }
+
+export default Home;
