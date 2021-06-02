@@ -24,17 +24,10 @@ function Login() {
     const handleSubmit = (e) => {
         let { email, password } = form;
         e.preventDefault();
-        setError({});
-        let isError = false;
+        const errors = {};
 
         if (password.length < 6) {
-            setError(prevState => {
-                return {
-                    ...prevState,
-                    password: "złe haslo",
-                }
-            });
-            isError = true;
+            errors['password'] = "złe haslo";
         }
 
         function validateEmail(email) {
@@ -42,19 +35,22 @@ function Login() {
             return re.test(email);
         }
 
-        if (!validateEmail(email)) {
+        if (validateEmail(email)) {
+            errors['email'] = "Podany e-mail jest nieprawidłowy";
+        }
+
+
+        if (Object.keys(error)) {
             setError(prevState => {
                 return {
                     ...prevState,
-                    email: "Podany e-mail jest nieprawidłowy",
+                    ...errors,
                 }
             });
-            isError = true;
-        }
-
-        if (!isError) {
+        } else {
+            setError({});
             history.push('/oddaj-rzeczy');
-        };
+        }
     }
 
     return (
