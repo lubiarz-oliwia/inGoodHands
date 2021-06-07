@@ -1,37 +1,20 @@
 import React, { useState } from 'react'
+import RadioList from './RadioList';
 
-function Step1() {
+function Step1({ setForm, formData, navigation }) {
     const giveAway = ["ubrania, które nadają się do ponownego użycia", "ubrania, do wyrzucenia", "zabawki", "książki", "inne"];
+    const { next } = navigation;
 
-    const [selectedOption, setSelectedOption] = useState('');
-
-    const handleChange = (e) => {
-        const { name } = e.target;
-        setSelectedOption(name);
-    };
-
-    const handleSubmit = (e) => {
-        e.preventDefault();
-    }
+    const { giveAwayOption } = formData;
 
     return (
         <>
-            <form onSubmit={handleSubmit}>
-                {giveAway.map((item, index) => {
-                    return (
-                        <div>
-                            <input
-                                type="checkbox"
-                                name={`option${index + 1}`}
-                                onChange={handleChange}
-                                checked={selectedOption === `option${index + 1}`}
-                            />
-                            <label key={item}>{item}</label>
-                        </div>
-                    )
-                })}
+            <form
+            >
+                <h1>Zaznacz co chcesz oddać:</h1>
+                <RadioList data={giveAway} name="giveAway" value={giveAwayOption} onChange={e => setForm(e)}  />
             </form>
-            <button>Dalej</button>
+            <button onClick={next}>Next</button>
         </>
     )
 }
