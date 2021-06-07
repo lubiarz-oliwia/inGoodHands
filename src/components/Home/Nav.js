@@ -23,7 +23,7 @@ function Nav() {
                             offset={-70}
                             duration={500}
                         >
-                            Start
+                            <Link to="/">Start</Link>
                         </ScrollLink>
                     </li>
                     <li>

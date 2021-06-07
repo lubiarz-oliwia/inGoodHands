@@ -43,3 +43,36 @@ header {
         }
     }
 }
+
+
+.header2 {
+    height: 100vh;
+    background-image: url('../../../assets/FormHeroImage.jpg');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    margin-left: -50px;
+
+    div {
+        //align-items: flex-end;
+        flex-direction: column;
+
+        .mainHeader2 {
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            padding-right: 100px;
+            padding-top: 100px;
+
+            .ssss{
+                display: flex;
+                color: blue;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            }
+
+        
+        }
+    }
