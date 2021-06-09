@@ -4,7 +4,7 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
-import Form from "./components/Form";
+import UserPage from "./components/UserPage";
 import Home from "./components/Home";
 import Login from "./components/Login";
 import Logout from "./components/Logout";
@@ -17,7 +17,7 @@ function App() {
         <Route exact path="/" component={Home} />
         <Route path="/logowanie" component={Login} />
         <Route path="/rejestracja" component={Register} />
-        <Route path="/oddaj-rzeczy" component={Form} />
+        <Route path="/oddaj-rzeczy" component={UserPage} />
         <Route path="/wylogowano" component={Logout} />
       </Switch>
     </Router>

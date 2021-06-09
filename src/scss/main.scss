@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
-
 @import './settings/colors';
 @import './settings/fonts';
 @import './elements/mainPage';
 @import './elements/login.scss';
+@import './elements/logout.scss';
+@import './elements/userPage.scss';
 
 * {
     box-sizing: border-box;

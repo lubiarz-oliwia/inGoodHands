@@ -1,5 +1,5 @@
-export const addContactFormInfo = (data) => (
-    fetch(`https://fer-api.coderslab.pl/v1/portfolio/contact`, {
+export const giveAwayThing = (data) => (
+    fetch(`http://localhost:3000/contactForm`, {
         headers: {
             'Content-Type': 'application/json'
         },

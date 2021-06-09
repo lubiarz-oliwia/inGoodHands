@@ -1,4 +1,5 @@
 import React from "react";
+import {giveAwayThing} from '../../../actions/giveAway'
 
 const Summary = ({ setForm, formData, navigation }) => {
   
@@ -13,17 +14,22 @@ const {
     location,
     bag,
     helpGroup,
-    giveAwayOption,
+    giveAway,
     localizationSpecific
   } = formData;
 
   const { go, previous } = navigation;
 
+  const submitInfo = (formData) => {
+    const data = {...formData}
+    giveAwayThing(data);
+};
+
   return (
     <div>
       <h1>Podsumowanie Twojej darowizny</h1>
       <h2>Oddajesz:</h2>
-      <p> {`${bag}`} worki, {`${helpGroup}`} GroupHelpers, {`${giveAwayOption}`} opcje</p>
+      <p> {`${bag}`} worki, {`${helpGroup}`} GroupHelpers, {`${giveAway}`} opcje</p>
       <p>dla lokalizacji: {`${location}`}</p>
       <div>
         Adres odbioru:
@@ -40,7 +46,7 @@ const {
       </div>
       <div>
         <button onClick={previous}>Previous</button>
-        <button onClick={() => go("submit")}>Submit</button>
+        <button onClick={() => {go("submit"); submitInfo(formData)}}>Submit</button>
       </div>
     </div>
   );

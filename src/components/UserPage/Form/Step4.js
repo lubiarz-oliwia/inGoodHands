@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 function Step4({ formData, setForm, navigation }) {
     const { street, city, postCode, phone, date, time, note } = formData;
@@ -6,7 +6,7 @@ function Step4({ formData, setForm, navigation }) {
 
     return (
         <>
-            <form >
+            <form>
                 <div>
                     <label>
                         Ulica
@@ -16,7 +16,6 @@ function Step4({ formData, setForm, navigation }) {
                             value={street}
                             onChange={setForm}
                         />
-
                     </label>
                     <label>
                         Miasto
@@ -75,9 +74,17 @@ function Step4({ formData, setForm, navigation }) {
                         />
                     </label>
                 </div>
+                <button
+                    onClick={previous}
+                >
+                    Previous
+                </button>
+                <button
+                    onClick={next}
+                >
+                    Next
+                </button>
             </form>
-            <button onClick={previous}>Previous</button>
-            <button onClick={next}>Next</button>
         </>
     )
 }

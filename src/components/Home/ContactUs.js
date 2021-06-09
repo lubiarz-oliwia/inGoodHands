@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import { addContactFormInfo } from '../../actions/contactForm';
-import instagram from "../../assets/Instagram.svg";
-import facebook from "../../assets/Facebook.svg";
 import Decoration from "../../assets/Decoration.svg";
 
 function ContactUs() {
@@ -74,7 +72,8 @@ function ContactUs() {
                         <h1 className="header_h1_form"> Skontaktuj sie z nami </h1>
                         <img className="img_decoration" src={Decoration} alt="decoration" />
                     </div>
-                    {isFormSent ? <h1 className="success">formularz wyslany</h1> : null}
+                    {isFormSent ? <h1 className="success">Wiadomość została wysłana!
+                    Wkrótce się skontaktujemy.</h1> : null}
                     <form
                         className="contactUsForm"
                         onSubmit={handleSubmit}
@@ -101,26 +100,23 @@ function ContactUs() {
                                 {error.email && <p className="error">{error.email}</p>}
                             </label>
                         </div>
-                        <label className="formLabel">
-                            Wpisz swoją wiadomość
+                        <div className="group2">
+                            <label className="formLabel">
+                                Wpisz swoją wiadomość
                         <textarea
-                                type="text"
-                                name="message"
-                                value={form.message}
-                                onChange={handleChange}
-                            />
-                            {error.message && <p className="error">{error.message}</p>}
-                        </label>
-                        <button>Wyślij</button>
+                                    type="text"
+                                    name="message"
+                                    value={form.message}
+                                    onChange={handleChange}
+                                />
+                                {error.message && <p className="error">{error.message}</p>}
+                            </label>
+                        </div>
+                        <div className="for_but">
+                            <button>Wyślij</button>
+                        </div>
                     </form>
                 </div>
-                <footer>
-                    <p>CodersLab</p>
-                    <div className="icons">
-                        <img src={facebook} alt="facebook" />
-                        <img src={instagram} alt="instagram" />
-                    </div>
-                </footer>
             </div>
         </>
     )

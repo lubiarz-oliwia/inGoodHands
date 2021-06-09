@@ -15,7 +15,7 @@ function Step3({ setForm, navigation, formData }) {
                 <h1>Lokalizacja:</h1>
                 <DropDownList data={locations} name="location" value={location} onChange={setForm}/> 
                 <label>Komu chcesz pomóc?</label>
-                <CheckboxList data={helpGroups} name="helpGroup" value={helpGroup} onCheckBoxChange={setForm} />
+                <DropDownList data={helpGroups} name="helpGroup" value={helpGroup} onChange={setForm} />
                 <label>Wpisz nazwę konkretnej organizacji (opcjonalnie)</label>
                 <input
                     type="text"
