@@ -1,18 +1,5 @@
 import React from 'react';
 
-// const textGroup = {
-//     mainText: "mainText",
-//     line1_h1: "line1_h1",
-//     line1_p: "line1_p",
-//     line1_p2: "line1_p2",
-//     line2_h1: "line2_h1",
-//     line2_p: "line2_p",
-//     line2_p2: "line2_p2",
-//     line3_h1: "line3_h1",
-//     line3_p: "line3_p",
-//     line3_p2: "line3_p2",
-// }
-
 function UserStoryTable({ textGroup }) {
 
     return (
@@ -43,7 +30,6 @@ function UserStoryTable({ textGroup }) {
             </div>
         </div>
     )
-
 }
 
 export default UserStoryTable;

@@ -1,4 +1,5 @@
-.nav_1, .nav_2 {
+.nav_1,
+.nav_2 {
     display: flex;
     justify-content: flex-end;
     list-style-type: none;
@@ -29,6 +30,12 @@
 
     li {
         padding: 15px;
+
+        a {
+            text-decoration: none;
+            color: $color-grey;
+
+        }
 
         &:hover {
             border: 0.75px $color-text solid;

@@ -27,6 +27,8 @@ const steps = [
     note: "",
     bag: "",
     helpGroup: "",
+    giveAway: "",
+    localizationSpecific: ""
 } 
 
 function Form() {

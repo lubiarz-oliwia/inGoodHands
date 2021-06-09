@@ -7,7 +7,7 @@ import Nav from './Home/Nav';
 function Login() {
     const [form, setForm] = useState({ email: "", password: "" });
     const [error, setError] = useState({ email: "", password: "" });
-
+    
     const handleChange = (e) => {
         const { name, value } = e.target;
 
@@ -53,10 +53,12 @@ function Login() {
         }
 
         if (!isError) {
+            localStorage.setItem('user', JSON.stringify(form));
             history.push('/oddaj-rzeczy');
         };
     }
 
+    
     return (
         <>
             <Nav />
