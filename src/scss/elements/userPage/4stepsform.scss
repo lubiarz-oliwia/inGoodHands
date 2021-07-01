@@ -1,0 +1,112 @@
+//form header
+
+.header_form {
+    background-color: $color-yellow;
+    padding: 25px 100px;
+
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+}
+
+// 4steps form
+
+.steps_form {
+    background-color: $color-grey;
+    padding: 100px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    h1 {
+        padding: 15px 0;
+    }
+
+    .steps_button {
+        background-color: $color-grey;
+        border: solid 0.75px black;
+        padding: 15px 20px;
+        margin: 20px 0;
+        width: 100px;
+    }
+
+    .steps_error {
+        font-size: 15px;
+        color: red;
+        padding: 10px 0;
+    }
+}
+
+.steps_buttons {
+    display: flex;
+}
+
+.checkboxes {
+    margin-top: 10px;
+
+    label {
+        padding-left: 10px;
+    }
+}
+
+select {
+    width: 100px;
+}
+
+.radio_box {
+    input {
+        margin: 0 10px;
+    }
+}
+
+.lastStep_form {
+    display: flex;
+    flex-direction: column;
+
+    label {
+        padding: 10px;
+    }
+
+    input {
+        margin-left: 20px;
+    }
+}
+
+.form_review {
+    background-color: $color-yellow;
+    padding: 25px 100px;
+
+    h1,
+    h2 {
+        padding: 10px 0;
+    }
+
+    .for_summary {
+        p {
+            padding: 10px 0;
+            font-weight: bold;
+        }
+    }
+}
+
+.steps_button {
+    background-color: $color-grey;
+    border: solid 0.75px black;
+    padding: 15px 20px;
+    margin: 20px 0;
+    width: 100px;
+}
+
+
+.form_info {
+    background-color: $color-yellow;
+    padding: 25px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
