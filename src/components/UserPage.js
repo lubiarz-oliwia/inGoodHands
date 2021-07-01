@@ -1,5 +1,5 @@
 import React from 'react'
-import FormLogic from './UserPage/Form/FormLogic'
+import LogicForm from './UserPage/Form/LogicForm'
 import Header2 from './UserPage/Header2'
 import ContactUs from './Home/ContactUs'
 
@@ -8,7 +8,7 @@ function UserPage() {
     return (
         <div>
             <Header2 />
-            <FormLogic />
+            <LogicForm />
             <ContactUs />
         </div>
     )
